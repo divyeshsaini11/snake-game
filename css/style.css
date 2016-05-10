@@ -1,0 +1,81 @@
+body {
+	background:url('/img/background.jpg') no-repeat center fixed;
+	background-size: cover;
+	font-family: arial;
+}
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+
+canvas {
+	background: #000000;
+	border: 2px #cccccc solid;
+}
+
+.playground {
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+}
+
+.stats {
+	position: sticky;
+	width: 750px;
+	background: #333333;
+	padding:15px 15px 10px 15px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #ffffff;
+	margin: 2px;
+}
+
+#overlay {
+	display: none;
+	margin-top: -50px;
+	width: 600px;
+	overflow: auto;
+	position: fixed;
+	top:50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	text-align:center;
+	z-index: 5;
+	font-size: 30px;
+	color: #ffffff;
+	
+}
+
+#overlay a {
+	display: inline-block;
+	background: #cccccc;
+	font-size: 20px;
+	padding: 20px;
+}
+
+#score {
+	text-align:left;
+	display: inline-block;
+	padding: 20px;
+	width: 25%;
+	height: 60px;
+	background-color: #000000;
+}
+
+#high-score{
+	display: inline-block;
+	width: 25%;
+	padding: 20px;
+	height: 60px;
+	background-color: #000000;
+}
+
+.stats button {
+	padding: 10px;
+	float: right;
+	text-align: right;
+	color: #000000;
+}

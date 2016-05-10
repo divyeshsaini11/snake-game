@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Snake Game</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="score-container" id="overlay">
+			<p>Your Final Score : <span id="final-score"></span></p>
+			<br>
+			<a onClick="window.location.reload()" href="#">Click To Play Again</a>
+		</div>
+		<div class="playground">
+			<canvas id="myCanvas" width="750" height="600">
+				<p>Sorry, your browser doesn't support canvas</p>
+			</canvas>
+
+			<div class="stats">
+				<div id="score"></div>
+				<div id="high-score"></div>
+				<button onclick="resetScore()" id="reset-score">Reset High Score</button>
+			</div>
+		</div>
+	</div>
+	<!--jQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!--Bootstrap -->
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<!-- Main JavaScript -->
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
